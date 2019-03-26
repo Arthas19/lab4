@@ -1,0 +1,22 @@
+11:41:54.174 INFO  - Processing command line option -hwspec D:\ra89-2016\lprs2\lab3\basic_system\SDK\SDK_Export\hw\system.xml. 
+11:51:26.781 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:51:41.366 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:51:41.366 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:56:41.972 INFO  - FPGA configured successfully with bitstream "D:/ra89-2016/lprs2/lab3/basic_system/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:06:16.794 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:09:54.261 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,10 @@
+-batch 
+-create my_pheripherial 
+-ver 1.00.a 
+-dir "D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-ise 
+-driver 

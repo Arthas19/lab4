@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\ra89-2016\lprs2\lab3\basic_system\SDK\SDK_Workspace\basic_system_hw_platform\system_bd.bmm" key="basic_system_hw_platform-bmmFile"/>
+	<item value="D:\ra89-2016\lprs2\lab3\basic_system\SDK\SDK_Workspace\hello_world\Debug\hello_world.elf" key="basic_system_hw_platform-microblaze_0-initElf"/>
+	<item value="D:\ra89-2016\lprs2\lab3\basic_system\SDK\SDK_Workspace\basic_system_hw_platform\system.bit" key="basic_system_hw_platform-bitFile"/>
+</section>
