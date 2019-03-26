@@ -16,8 +16,10 @@ entity system_stub is
     CLK_P : in std_logic;
     CLK_N : in std_logic;
     my_pheripherial_0_DIP_Data_pin : in std_logic_vector(7 downto 0);
+    my_peripheral_lab4_0_RESET_N_I_pin : in std_logic;
     my_peripheral_lab4_0_DIRECT_MODE_I_pin : in std_logic;
     my_peripheral_lab4_0_DISPLAY_MODE_I_pin : in std_logic_vector(1 downto 0);
+    my_peripheral_lab4_0_CLK_I_pin : in std_logic;
     my_peripheral_lab4_0_VGA_HSYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_VGA_VSYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_BLANK_O_pin : out std_logic;
@@ -26,9 +28,7 @@ entity system_stub is
     my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
     my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_S_AXI_ACLK_pin : in std_logic;
-    my_peripheral_lab4_0_CLK_I_pin : in std_logic
+    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
   );
 end system_stub;
 
@@ -43,8 +43,10 @@ architecture STRUCTURE of system_stub is
       CLK_P : in std_logic;
       CLK_N : in std_logic;
       my_pheripherial_0_DIP_Data_pin : in std_logic_vector(7 downto 0);
+      my_peripheral_lab4_0_RESET_N_I_pin : in std_logic;
       my_peripheral_lab4_0_DIRECT_MODE_I_pin : in std_logic;
       my_peripheral_lab4_0_DISPLAY_MODE_I_pin : in std_logic_vector(1 downto 0);
+      my_peripheral_lab4_0_CLK_I_pin : in std_logic;
       my_peripheral_lab4_0_VGA_HSYNC_O_pin : out std_logic;
       my_peripheral_lab4_0_VGA_VSYNC_O_pin : out std_logic;
       my_peripheral_lab4_0_BLANK_O_pin : out std_logic;
@@ -53,9 +55,7 @@ architecture STRUCTURE of system_stub is
       my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
       my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
       my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-      my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
-      my_peripheral_lab4_0_S_AXI_ACLK_pin : in std_logic;
-      my_peripheral_lab4_0_CLK_I_pin : in std_logic
+      my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -73,8 +73,10 @@ begin
       CLK_P => CLK_P,
       CLK_N => CLK_N,
       my_pheripherial_0_DIP_Data_pin => my_pheripherial_0_DIP_Data_pin,
+      my_peripheral_lab4_0_RESET_N_I_pin => my_peripheral_lab4_0_RESET_N_I_pin,
       my_peripheral_lab4_0_DIRECT_MODE_I_pin => my_peripheral_lab4_0_DIRECT_MODE_I_pin,
       my_peripheral_lab4_0_DISPLAY_MODE_I_pin => my_peripheral_lab4_0_DISPLAY_MODE_I_pin,
+      my_peripheral_lab4_0_CLK_I_pin => my_peripheral_lab4_0_CLK_I_pin,
       my_peripheral_lab4_0_VGA_HSYNC_O_pin => my_peripheral_lab4_0_VGA_HSYNC_O_pin,
       my_peripheral_lab4_0_VGA_VSYNC_O_pin => my_peripheral_lab4_0_VGA_VSYNC_O_pin,
       my_peripheral_lab4_0_BLANK_O_pin => my_peripheral_lab4_0_BLANK_O_pin,
@@ -83,9 +85,7 @@ begin
       my_peripheral_lab4_0_SYNC_O_pin => my_peripheral_lab4_0_SYNC_O_pin,
       my_peripheral_lab4_0_RED_O_pin => my_peripheral_lab4_0_RED_O_pin,
       my_peripheral_lab4_0_GREEN_O_pin => my_peripheral_lab4_0_GREEN_O_pin,
-      my_peripheral_lab4_0_BLUE_O_pin => my_peripheral_lab4_0_BLUE_O_pin,
-      my_peripheral_lab4_0_S_AXI_ACLK_pin => my_peripheral_lab4_0_S_AXI_ACLK_pin,
-      my_peripheral_lab4_0_CLK_I_pin => my_peripheral_lab4_0_CLK_I_pin
+      my_peripheral_lab4_0_BLUE_O_pin => my_peripheral_lab4_0_BLUE_O_pin
     );
 
 end architecture STRUCTURE;

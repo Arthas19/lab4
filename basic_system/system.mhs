@@ -18,8 +18,10 @@
  PORT CLK_P = CLK, DIR = I, DIFFERENTIAL_POLARITY = P, SIGIS = CLK, CLK_FREQ = 50000000
  PORT CLK_N = CLK, DIR = I, DIFFERENTIAL_POLARITY = N, SIGIS = CLK, CLK_FREQ = 50000000
  PORT my_pheripherial_0_DIP_Data_pin = net_my_pheripherial_0_DIP_Data_pin, DIR = I, VEC = [7:0]
+ PORT my_peripheral_lab4_0_RESET_N_I_pin = net_my_peripheral_lab4_0_RESET_N_I_pin, DIR = I, SIGIS = RST
  PORT my_peripheral_lab4_0_DIRECT_MODE_I_pin = net_my_peripheral_lab4_0_DIRECT_MODE_I_pin, DIR = I
  PORT my_peripheral_lab4_0_DISPLAY_MODE_I_pin = net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin, DIR = I, VEC = [1:0]
+ PORT my_peripheral_lab4_0_CLK_I_pin = net_my_peripheral_lab4_0_CLK_I_pin, DIR = I, SIGIS = CLK
  PORT my_peripheral_lab4_0_VGA_HSYNC_O_pin = my_peripheral_lab4_0_VGA_HSYNC_O, DIR = O
  PORT my_peripheral_lab4_0_VGA_VSYNC_O_pin = my_peripheral_lab4_0_VGA_VSYNC_O, DIR = O
  PORT my_peripheral_lab4_0_BLANK_O_pin = my_peripheral_lab4_0_BLANK_O, DIR = O
@@ -29,8 +31,6 @@
  PORT my_peripheral_lab4_0_RED_O_pin = my_peripheral_lab4_0_RED_O, DIR = O, VEC = [7:0]
  PORT my_peripheral_lab4_0_GREEN_O_pin = my_peripheral_lab4_0_GREEN_O, DIR = O, VEC = [7:0]
  PORT my_peripheral_lab4_0_BLUE_O_pin = my_peripheral_lab4_0_BLUE_O, DIR = O, VEC = [7:0]
- PORT my_peripheral_lab4_0_S_AXI_ACLK_pin = net_my_peripheral_lab4_0_S_AXI_ACLK_pin, DIR = I, SIGIS = CLK
- PORT my_peripheral_lab4_0_CLK_I_pin = net_my_peripheral_lab4_0_CLK_I_pin, DIR = I, SIGIS = CLK
 
 
 BEGIN proc_sys_reset
@@ -188,7 +188,12 @@ END
 BEGIN my_peripheral_lab4
  PARAMETER INSTANCE = my_peripheral_lab4_0
  PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x7b200000
+ PARAMETER C_HIGHADDR = 0x7b20ffff
  BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT CLK_I = net_my_peripheral_lab4_0_CLK_I_pin
+ PORT RESET_N_I = net_my_peripheral_lab4_0_RESET_N_I_pin
  PORT DIRECT_MODE_I = net_my_peripheral_lab4_0_DIRECT_MODE_I_pin
  PORT DISPLAY_MODE_I = net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin
  PORT VGA_HSYNC_O = my_peripheral_lab4_0_VGA_HSYNC_O
@@ -200,7 +205,5 @@ BEGIN my_peripheral_lab4
  PORT RED_O = my_peripheral_lab4_0_RED_O
  PORT GREEN_O = my_peripheral_lab4_0_GREEN_O
  PORT BLUE_O = my_peripheral_lab4_0_BLUE_O
- PORT S_AXI_ACLK = clk_100_0000MHz
- PORT CLK_I = net_my_peripheral_lab4_0_CLK_I_pin
 END
 

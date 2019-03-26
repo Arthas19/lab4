@@ -30,10 +30,6 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4lite_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">spartan6</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 81</arg> 
 </msg>
 
-<msg type="info" file="EDK" num="1432" delta="old" >Frequency for Top-Level Input Clock &apos;<arg fmt="%s" index="1">my_peripheral_lab4_0_S_AXI_ACLK_pin</arg>&apos; is not specified. Clock DRCs will not be performed for IPs connected to that clock port, unless they are connected through the clock generator IP. 
-
-</msg>
-
 <msg type="info" file="EDK" num="1432" delta="old" >Frequency for Top-Level Input Clock &apos;<arg fmt="%s" index="1">my_peripheral_lab4_0_CLK_I_pin</arg>&apos; is not specified. Clock DRCs will not be performed for IPs connected to that clock port, unless they are connected through the clock generator IP. 
 
 </msg>
@@ -54,9 +50,6 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 </msg>
 
 <msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">my_pheripherial_0_DIP_Data_pin</arg>, CONNECTOR: <arg fmt="%s" index="2">net_my_pheripherial_0_DIP_Data_pin</arg> - floating connection - <arg fmt="%s" index="3">D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 20</arg> 
-</msg>
-
-<msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">my_peripheral_lab4_0_S_AXI_ACLK_pin</arg>, CONNECTOR: <arg fmt="%s" index="2">net_my_peripheral_lab4_0_S_AXI_ACLK_pin</arg> - floating connection - <arg fmt="%s" index="3">D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 32</arg> 
 </msg>
 
 <msg type="warning" file="EDK" num="4181" delta="old" >PORT: <arg fmt="%s" index="1">GPIO_IO_O</arg>, CONNECTOR: <arg fmt="%s" index="2">LEDS_TRI_O</arg> - floating connection - <arg fmt="%s" index="3">D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 171</arg> 

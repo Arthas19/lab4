@@ -515,8 +515,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
         C_USE_WSTRB = 0
         C_DPHASE_TIMEOUT = 8
-        C_BASEADDR = "11111111111111111111111111111111"
-        C_HIGHADDR = "00000000000000000000000000000000"
+        C_BASEADDR = "01111011001000000000000000000000"
+        C_HIGHADDR = "01111011001000001111111111111111"
         C_FAMILY = "spartan6"
         C_NUM_REG = 1
         C_NUM_MEM = 1
@@ -540,7 +540,7 @@ Synthesizing Unit <axi_lite_ipif>.
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
         C_USE_WSTRB = 0
         C_DPHASE_TIMEOUT = 8
-        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111011001000000000000000000000","0000000000000000000000000000000001111011001000001111111111111111")
         C_ARD_NUM_CE_ARRAY = (1)
         C_FAMILY = "spartan6"
     Summary:
@@ -549,7 +549,7 @@ Unit <axi_lite_ipif> synthesized.
 
 Synthesizing Unit <slave_attachment>.
     Related source file is "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
-        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111011001000000000000000000000","0000000000000000000000000000000001111011001000001111111111111111")
         C_ARD_NUM_CE_ARRAY = (1)
         C_IPIF_ABUS_WIDTH = 32
         C_IPIF_DBUS_WIDTH = 32
@@ -595,7 +595,7 @@ Synthesizing Unit <address_decoder>.
     Related source file is "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
         C_BUS_AWIDTH = 9
         C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
-        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001111011001000000000000000000000","0000000000000000000000000000000001111011001000001111111111111111")
         C_ARD_NUM_CE_ARRAY = (1)
         C_FAMILY = "nofamily"
 WARNING:Xst:647 - Input <Address_In_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1407,11 +1407,11 @@ my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/clk_s                         
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.21 secs
+Total CPU time to Xst completion: 8.28 secs
  
 --> 
 
-Total memory usage is 296304 kilobytes
+Total memory usage is 291568 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   63 (   0 filtered)

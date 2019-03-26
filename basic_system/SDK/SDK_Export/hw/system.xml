@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Tue Mar 26 12:42:02 2019">
+<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Tue Mar 26 12:58:18 2019">
 
   <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx45" PACKAGE="fgg676" PART="xc6slx45fgg676-2" SOURCE="D:/ra89-2016/lprs2/lab4/basic_system/system.xmp" SPEEDGRADE="-2"/>
 
@@ -38,67 +38,69 @@
     <PORT DIR="I" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="6" MSB="7" NAME="my_pheripherial_0_DIP_Data_pin" RIGHT="0" SIGNAME="net_my_pheripherial_0_DIP_Data_pin">
       <CONNECTIONS/>
     </PORT>
-    <PORT DIR="I" MHS_INDEX="7" NAME="my_peripheral_lab4_0_DIRECT_MODE_I_pin" SIGNAME="net_my_peripheral_lab4_0_DIRECT_MODE_I_pin">
+    <PORT DIR="I" MHS_INDEX="7" NAME="my_peripheral_lab4_0_RESET_N_I_pin" SIGIS="RST" SIGNAME="net_my_peripheral_lab4_0_RESET_N_I_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="RESET_N_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" MHS_INDEX="8" NAME="my_peripheral_lab4_0_DIRECT_MODE_I_pin" SIGNAME="net_my_peripheral_lab4_0_DIRECT_MODE_I_pin">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="DIRECT_MODE_I"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="8" MSB="1" NAME="my_peripheral_lab4_0_DISPLAY_MODE_I_pin" RIGHT="0" SIGNAME="net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin">
+    <PORT DIR="I" ENDIAN="LITTLE" LEFT="1" LSB="0" MHS_INDEX="9" MSB="1" NAME="my_peripheral_lab4_0_DISPLAY_MODE_I_pin" RIGHT="0" SIGNAME="net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="DISPLAY_MODE_I"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="9" NAME="my_peripheral_lab4_0_VGA_HSYNC_O_pin" SIGNAME="my_peripheral_lab4_0_VGA_HSYNC_O">
+    <PORT DIR="I" MHS_INDEX="10" NAME="my_peripheral_lab4_0_CLK_I_pin" SIGIS="CLK" SIGNAME="net_my_peripheral_lab4_0_CLK_I_pin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="CLK_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="11" NAME="my_peripheral_lab4_0_VGA_HSYNC_O_pin" SIGNAME="my_peripheral_lab4_0_VGA_HSYNC_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="VGA_HSYNC_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="10" NAME="my_peripheral_lab4_0_VGA_VSYNC_O_pin" SIGNAME="my_peripheral_lab4_0_VGA_VSYNC_O">
+    <PORT DIR="O" MHS_INDEX="12" NAME="my_peripheral_lab4_0_VGA_VSYNC_O_pin" SIGNAME="my_peripheral_lab4_0_VGA_VSYNC_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="VGA_VSYNC_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="11" NAME="my_peripheral_lab4_0_BLANK_O_pin" SIGNAME="my_peripheral_lab4_0_BLANK_O">
+    <PORT DIR="O" MHS_INDEX="13" NAME="my_peripheral_lab4_0_BLANK_O_pin" SIGNAME="my_peripheral_lab4_0_BLANK_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="BLANK_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="12" NAME="my_peripheral_lab4_0_PIX_CLOCK_O_pin" SIGNAME="my_peripheral_lab4_0_PIX_CLOCK_O">
+    <PORT DIR="O" MHS_INDEX="14" NAME="my_peripheral_lab4_0_PIX_CLOCK_O_pin" SIGNAME="my_peripheral_lab4_0_PIX_CLOCK_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="PIX_CLOCK_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="13" NAME="my_peripheral_lab4_0_PSAVE_O_pin" SIGNAME="my_peripheral_lab4_0_PSAVE_O">
+    <PORT DIR="O" MHS_INDEX="15" NAME="my_peripheral_lab4_0_PSAVE_O_pin" SIGNAME="my_peripheral_lab4_0_PSAVE_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="PSAVE_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" MHS_INDEX="14" NAME="my_peripheral_lab4_0_SYNC_O_pin" SIGNAME="my_peripheral_lab4_0_SYNC_O">
+    <PORT DIR="O" MHS_INDEX="16" NAME="my_peripheral_lab4_0_SYNC_O_pin" SIGNAME="my_peripheral_lab4_0_SYNC_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="SYNC_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="15" MSB="7" NAME="my_peripheral_lab4_0_RED_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_RED_O">
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="17" MSB="7" NAME="my_peripheral_lab4_0_RED_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_RED_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="RED_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="16" MSB="7" NAME="my_peripheral_lab4_0_GREEN_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_GREEN_O">
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="18" MSB="7" NAME="my_peripheral_lab4_0_GREEN_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_GREEN_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="GREEN_O"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="17" MSB="7" NAME="my_peripheral_lab4_0_BLUE_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_BLUE_O">
+    <PORT DIR="O" ENDIAN="LITTLE" LEFT="7" LSB="0" MHS_INDEX="19" MSB="7" NAME="my_peripheral_lab4_0_BLUE_O_pin" RIGHT="0" SIGNAME="my_peripheral_lab4_0_BLUE_O">
       <CONNECTIONS>
         <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="BLUE_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" MHS_INDEX="18" NAME="my_peripheral_lab4_0_S_AXI_ACLK_pin" SIGIS="CLK" SIGNAME="net_my_peripheral_lab4_0_S_AXI_ACLK_pin">
-      <CONNECTIONS/>
-    </PORT>
-    <PORT DIR="I" MHS_INDEX="19" NAME="my_peripheral_lab4_0_CLK_I_pin" SIGIS="CLK" SIGNAME="net_my_peripheral_lab4_0_CLK_I_pin">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="my_peripheral_lab4_0" PORT="CLK_I"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -4249,6 +4251,11 @@
             <ROUTEPNT INDEX="0" INSTANCE="axi4lite_0"/>
           </ACCESSROUTE>
         </MEMRANGE>
+        <MEMRANGE BASEDECIMAL="2065694720" BASENAME="C_BASEADDR" BASEVALUE="0x7b200000" HIGHDECIMAL="2065760255" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x7b20ffff" INSTANCE="my_peripheral_lab4_0" IS_DATA="TRUE" IS_INSTRUCTION="FALSE" IS_VALID="TRUE" MEMTYPE="REGISTER" SIZE="65536" SIZEABRV="64K">
+          <ACCESSROUTE>
+            <ROUTEPNT INDEX="0" INSTANCE="axi4lite_0"/>
+          </ACCESSROUTE>
+        </MEMRANGE>
       </MEMORYMAP>
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="microblaze_0_d_bram_ctrl"/>
@@ -5677,10 +5684,10 @@
         <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="11" NAME="C_M_AXI_PROTOCOL" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000002000000020000000200000002">
           <DESCRIPTION>Master AXI Protocol</DESCRIPTION>
         </PARAMETER>
-        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_M_AXI_BASE_ADDR" TYPE="STD_LOGIC_VECTOR" VALUE="0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040020000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040600000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000041400000">
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="12" NAME="C_M_AXI_BASE_ADDR" TYPE="STD_LOGIC_VECTOR" VALUE="0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000007b200000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040020000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000040600000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000041400000">
           <DESCRIPTION>Master AXI Base Address</DESCRIPTION>
         </PARAMETER>
-        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="13" NAME="C_M_AXI_HIGH_ADDR" TYPE="STD_LOGIC_VECTOR" VALUE="0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004002ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004060ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004140ffff">
+        <PARAMETER ASSIGNMENT="UPDATE" CHANGEDBY="SYSTEM" MPD_INDEX="13" NAME="C_M_AXI_HIGH_ADDR" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b20ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004002ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004060ffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004140ffff">
           <DESCRIPTION>Master AXI High Address</DESCRIPTION>
         </PARAMETER>
         <PARAMETER ASSIGNMENT="UPDATE" MPD_INDEX="14" NAME="C_S_AXI_BASE_ID" TYPE="STD_LOGIC_VECTOR" VALUE="0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
@@ -7144,8 +7151,8 @@
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="2" NAME="C_S_AXI_MIN_SIZE" TYPE="std_logic_vector" VALUE="0x000001ff"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="3" NAME="C_USE_WSTRB" TYPE="INTEGER" VALUE="0"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="4" NAME="C_DPHASE_TIMEOUT" TYPE="INTEGER" VALUE="8"/>
-        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" MPD_INDEX="5" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0xffffffff"/>
-        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" MPD_INDEX="6" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x00000000"/>
+        <PARAMETER ADDRESS="BASE" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="5" NAME="C_BASEADDR" TYPE="std_logic_vector" VALUE="0x7b200000"/>
+        <PARAMETER ADDRESS="HIGH" ADDR_TYPE="REGISTER" ASSIGNMENT="OPTIONAL" CHANGEDBY="USER" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="6" NAME="C_HIGHADDR" TYPE="std_logic_vector" VALUE="0x7b20ffff"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" CHANGEDBY="SYSTEM" MPD_INDEX="7" NAME="C_FAMILY" TYPE="STRING" VALUE="spartan6"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="8" NAME="C_NUM_REG" TYPE="INTEGER" VALUE="1"/>
         <PARAMETER ASSIGNMENT="OPTIONAL" MPD_INDEX="9" NAME="C_NUM_MEM" TYPE="INTEGER" VALUE="1"/>
@@ -7154,69 +7161,74 @@
         <PARAMETER ASSIGNMENT="CONSTANT" MPD_INDEX="12" NAME="C_S_AXI_PROTOCOL" TYPE="STRING" VALUE="AXI4LITE"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="21" NAME="DIRECT_MODE_I" SIGNAME="net_my_peripheral_lab4_0_DIRECT_MODE_I_pin">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_DIRECT_MODE_I_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="1" LSB="0" MHS_INDEX="1" MPD_INDEX="22" MSB="1" NAME="DISPLAY_MODE_I" RIGHT="0" SIGNAME="net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin" VECFORMULA="[1 : 0]">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_DISPLAY_MODE_I_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="23" NAME="VGA_HSYNC_O" SIGNAME="my_peripheral_lab4_0_VGA_HSYNC_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_VGA_HSYNC_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="24" NAME="VGA_VSYNC_O" SIGNAME="my_peripheral_lab4_0_VGA_VSYNC_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_VGA_VSYNC_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="4" MPD_INDEX="25" NAME="BLANK_O" SIGNAME="my_peripheral_lab4_0_BLANK_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_BLANK_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="26" NAME="PIX_CLOCK_O" SIGNAME="my_peripheral_lab4_0_PIX_CLOCK_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_PIX_CLOCK_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="27" NAME="PSAVE_O" SIGNAME="my_peripheral_lab4_0_PSAVE_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_PSAVE_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="28" NAME="SYNC_O" SIGNAME="my_peripheral_lab4_0_SYNC_O">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_SYNC_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="8" MPD_INDEX="29" MSB="7" NAME="RED_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_RED_O" VECFORMULA="[7 : 0]">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_RED_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="9" MPD_INDEX="30" MSB="7" NAME="GREEN_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_GREEN_O" VECFORMULA="[7 : 0]">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_GREEN_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="10" MPD_INDEX="31" MSB="7" NAME="BLUE_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_BLUE_O" VECFORMULA="[7 : 0]">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_BLUE_O_pin"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT BUS="S_AXI" CLKFREQUENCY="100000000" DEF_SIGNAME="__BUS__" DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="11" MPD_INDEX="0" NAME="S_AXI_ACLK" SIGIS="CLK" SIGNAME="clk_100_0000MHz">
+        <PORT BUS="S_AXI" CLKFREQUENCY="100000000" DEF_SIGNAME="__BUS__" DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="S_AXI_ACLK" SIGIS="CLK" SIGNAME="clk_100_0000MHz">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="12" MPD_INDEX="19" NAME="CLK_I" SIGIS="CLK" SIGNAME="net_my_peripheral_lab4_0_CLK_I_pin">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="19" NAME="CLK_I" SIGIS="CLK" SIGNAME="net_my_peripheral_lab4_0_CLK_I_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_CLK_I_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="20" NAME="RESET_N_I" SIGIS="RST" SIGNAME="net_my_peripheral_lab4_0_RESET_N_I_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_RESET_N_I_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="3" MPD_INDEX="21" NAME="DIRECT_MODE_I" SIGNAME="net_my_peripheral_lab4_0_DIRECT_MODE_I_pin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_DIRECT_MODE_I_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="1" LSB="0" MHS_INDEX="4" MPD_INDEX="22" MSB="1" NAME="DISPLAY_MODE_I" RIGHT="0" SIGNAME="net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin" VECFORMULA="[1 : 0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_DISPLAY_MODE_I_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="5" MPD_INDEX="23" NAME="VGA_HSYNC_O" SIGNAME="my_peripheral_lab4_0_VGA_HSYNC_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_VGA_HSYNC_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="6" MPD_INDEX="24" NAME="VGA_VSYNC_O" SIGNAME="my_peripheral_lab4_0_VGA_VSYNC_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_VGA_VSYNC_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="7" MPD_INDEX="25" NAME="BLANK_O" SIGNAME="my_peripheral_lab4_0_BLANK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_BLANK_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="8" MPD_INDEX="26" NAME="PIX_CLOCK_O" SIGNAME="my_peripheral_lab4_0_PIX_CLOCK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_PIX_CLOCK_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="9" MPD_INDEX="27" NAME="PSAVE_O" SIGNAME="my_peripheral_lab4_0_PSAVE_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_PSAVE_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="10" MPD_INDEX="28" NAME="SYNC_O" SIGNAME="my_peripheral_lab4_0_SYNC_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_SYNC_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="11" MPD_INDEX="29" MSB="7" NAME="RED_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_RED_O" VECFORMULA="[7 : 0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_RED_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="12" MPD_INDEX="30" MSB="7" NAME="GREEN_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_GREEN_O" VECFORMULA="[7 : 0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_GREEN_O_pin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" ENDIAN="LITTLE" IS_INSTANTIATED="TRUE" LEFT="7" LSB="0" MHS_INDEX="13" MPD_INDEX="31" MSB="7" NAME="BLUE_O" RIGHT="0" SIGNAME="my_peripheral_lab4_0_BLUE_O" VECFORMULA="[7 : 0]">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_BLUE_O_pin"/>
           </CONNECTIONS>
         </PORT>
         <PORT BUS="S_AXI" DEF_SIGNAME="axi4lite_0_M_ARESETN" DIR="I" MPD_INDEX="1" NAME="S_AXI_ARESETN" SIGIS="RST" SIGNAME="axi4lite_0_M_ARESETN">
@@ -7309,7 +7321,6 @@
             <CONNECTION INSTANCE="axi4lite_0" PORT="M_AXI_AWREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" MPD_INDEX="20" NAME="RESET_N_I" SIGIS="RST" SIGNAME="__NOC__"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="axi4lite_0" BUSSTD="AXI" BUSSTD_PSF="AXI" IS_INSTANTIATED="TRUE" MHS_INDEX="0" MPD_INDEX="0" NAME="S_AXI" PROTOCOL="AXI4LITE" TYPE="SLAVE">
@@ -7337,7 +7348,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE BASEDECIMAL="4294967295" BASENAME="C_BASEADDR" BASEVALUE="0xffffffff" HIGHDECIMAL="0" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x00000000" MEMTYPE="REGISTER" MINSIZE="0x100" SIZE="0" SIZEABRV="U">
+        <MEMRANGE BASEDECIMAL="2065694720" BASENAME="C_BASEADDR" BASEVALUE="0x7b200000" HIGHDECIMAL="2065760255" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x7b20ffff" MEMTYPE="REGISTER" MINSIZE="0x100" SIZE="65536" SIZEABRV="64K">
           <SLAVES>
             <SLAVE BUSINTERFACE="S_AXI"/>
           </SLAVES>

@@ -16,8 +16,10 @@ entity system is
     CLK_P : in std_logic;
     CLK_N : in std_logic;
     my_pheripherial_0_DIP_Data_pin : in std_logic_vector(7 downto 0);
+    my_peripheral_lab4_0_RESET_N_I_pin : in std_logic;
     my_peripheral_lab4_0_DIRECT_MODE_I_pin : in std_logic;
     my_peripheral_lab4_0_DISPLAY_MODE_I_pin : in std_logic_vector(1 downto 0);
+    my_peripheral_lab4_0_CLK_I_pin : in std_logic;
     my_peripheral_lab4_0_VGA_HSYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_VGA_VSYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_BLANK_O_pin : out std_logic;
@@ -26,9 +28,7 @@ entity system is
     my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
     my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_S_AXI_ACLK_pin : in std_logic;
-    my_peripheral_lab4_0_CLK_I_pin : in std_logic
+    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
   );
 end system;
 
@@ -1896,6 +1896,7 @@ architecture STRUCTURE of system is
   signal net_my_peripheral_lab4_0_CLK_I_pin : std_logic;
   signal net_my_peripheral_lab4_0_DIRECT_MODE_I_pin : std_logic;
   signal net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin : std_logic_vector(1 downto 0);
+  signal net_my_peripheral_lab4_0_RESET_N_I_pin : std_logic;
   signal net_vcc0 : std_logic;
   signal pgassign1 : std_logic_vector(4 downto 0);
   signal proc_sys_reset_0_BUS_STRUCT_RESET : std_logic_vector(0 to 0);
@@ -1924,8 +1925,10 @@ begin
 
   -- Internal assignments
 
+  net_my_peripheral_lab4_0_RESET_N_I_pin <= my_peripheral_lab4_0_RESET_N_I_pin;
   net_my_peripheral_lab4_0_DIRECT_MODE_I_pin <= my_peripheral_lab4_0_DIRECT_MODE_I_pin;
   net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin <= my_peripheral_lab4_0_DISPLAY_MODE_I_pin;
+  net_my_peripheral_lab4_0_CLK_I_pin <= my_peripheral_lab4_0_CLK_I_pin;
   my_peripheral_lab4_0_VGA_HSYNC_O_pin <= my_peripheral_lab4_0_VGA_HSYNC_O;
   my_peripheral_lab4_0_VGA_VSYNC_O_pin <= my_peripheral_lab4_0_VGA_VSYNC_O;
   my_peripheral_lab4_0_BLANK_O_pin <= my_peripheral_lab4_0_BLANK_O;
@@ -1935,7 +1938,6 @@ begin
   my_peripheral_lab4_0_RED_O_pin <= my_peripheral_lab4_0_RED_O;
   my_peripheral_lab4_0_GREEN_O_pin <= my_peripheral_lab4_0_GREEN_O;
   my_peripheral_lab4_0_BLUE_O_pin <= my_peripheral_lab4_0_BLUE_O;
-  net_my_peripheral_lab4_0_CLK_I_pin <= my_peripheral_lab4_0_CLK_I_pin;
   pgassign1(4 downto 4) <= clk_100_0000MHz(0 to 0);
   pgassign1(3 downto 3) <= clk_100_0000MHz(0 to 0);
   pgassign1(2 downto 2) <= clk_100_0000MHz(0 to 0);
@@ -3631,7 +3633,7 @@ begin
       S_AXI_BVALID => axi4lite_0_M_BVALID(4),
       S_AXI_AWREADY => axi4lite_0_M_AWREADY(4),
       CLK_I => net_my_peripheral_lab4_0_CLK_I_pin,
-      RESET_N_I => net_gnd0,
+      RESET_N_I => net_my_peripheral_lab4_0_RESET_N_I_pin,
       DIRECT_MODE_I => net_my_peripheral_lab4_0_DIRECT_MODE_I_pin,
       DISPLAY_MODE_I => net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin,
       VGA_HSYNC_O => my_peripheral_lab4_0_VGA_HSYNC_O,

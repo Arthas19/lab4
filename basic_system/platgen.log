@@ -46,11 +46,6 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
 
 Computing clock values...
 INFO:EDK:1432 - Frequency for Top-Level Input Clock
-   'my_peripheral_lab4_0_S_AXI_ACLK_pin' is not specified. Clock DRCs will not
-   be performed for IPs connected to that clock port, unless they are connected
-   through the clock generator IP. 
-
-INFO:EDK:1432 - Frequency for Top-Level Input Clock
    'my_peripheral_lab4_0_CLK_I_pin' is not specified. Clock DRCs will not be
    performed for IPs connected to that clock port, unless they are connected
    through the clock generator IP. 
@@ -72,6 +67,7 @@ Address Map for Processor microblaze_0
   (0x40020000-0x4002ffff) DIP_Switches	axi4lite_0
   (0x40600000-0x4060ffff) RS232	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x7b200000-0x7b20ffff) my_peripheral_lab4_0	axi4lite_0
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 1 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
@@ -96,9 +92,6 @@ Checking port drivers...
 WARNING:EDK:4181 - PORT: my_pheripherial_0_DIP_Data_pin, CONNECTOR:
    net_my_pheripherial_0_DIP_Data_pin - floating connection -
    D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 20 
-WARNING:EDK:4181 - PORT: my_peripheral_lab4_0_S_AXI_ACLK_pin, CONNECTOR:
-   net_my_peripheral_lab4_0_S_AXI_ACLK_pin - floating connection -
-   D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 32 
 WARNING:EDK:4181 - PORT: GPIO_IO_O, CONNECTOR: LEDS_TRI_O - floating connection
    - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 171 
 
@@ -206,9 +199,6 @@ implementation netlist
 IPNAME:mdm INSTANCE:debug_module -
 D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 111 - Copying cache
 implementation netlist
-IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 137 - Copying cache
-implementation netlist
 IPNAME:axi_uartlite INSTANCE:rs232 -
 D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 145 - Copying cache
 implementation netlist
@@ -230,7 +220,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -248,16 +238,20 @@ INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 INSTANCE:clock_generator_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
 line 124 - Running XST synthesis
+INSTANCE:axi4lite_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 137 -
+Running XST synthesis
 INSTANCE:my_peripheral_lab4_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
 line 188 - Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
 D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 124 - Running NGCBUILD
+IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 137 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 22.00 seconds
+Total run time: 33.00 seconds

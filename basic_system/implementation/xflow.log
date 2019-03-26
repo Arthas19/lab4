@@ -5,8 +5,6 @@ xflow.exe -wd implementation -p xc6slx45fgg676-2 -implement xflow.opt system.ngc
 PMSPEC -- Overriding Xilinx file
 <C:/Xilinx/14.6/ISE_DS/EDK/spartan6/data/spartan6.acd> with local file
 <C:/Xilinx/14.6/ISE_DS/ISE/spartan6/data/spartan6.acd>
-.... Copying flowfile C:/Xilinx/14.6/ISE_DS/ISE/xilinx/data/fpga.flw into
-working directory D:/ra89-2016/lprs2/lab4/basic_system/implementation 
 
 Using Flow File: D:/ra89-2016/lprs2/lab4/basic_system/implementation/fpga.flw 
 Using Option File(s): 
