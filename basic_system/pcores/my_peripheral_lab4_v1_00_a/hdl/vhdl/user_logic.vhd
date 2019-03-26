@@ -88,7 +88,7 @@ entity user_logic is
     --USER generics added here
 	RES_TYPE             : natural := 1;
     TEXT_MEM_DATA_WIDTH  : natural := 6;
-    GRAPH_MEM_DATA_WIDTH : natural := 32
+    GRAPH_MEM_DATA_WIDTH : natural := 32;
     -- ADD USER GENERICS ABOVE THIS LINE ---------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -115,7 +115,7 @@ entity user_logic is
     sync_o         : out std_logic;
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
-    blue_o         : out std_logic_vector(7 downto 0)
+    blue_o         : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------

@@ -1,0 +1,14 @@
+set -tmpdir D:\ra89-2016\lprs2\lab4\basic_system\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx45fgg676-2
+-top system_my_peripheral_lab4_0_wrapper
+-ifmt MIXED
+-ifn system_my_peripheral_lab4_0_wrapper_xst.prj
+-ofn ../implementation/system_my_peripheral_lab4_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"D:\ra89-2016\lprs2\lab4\basic_system\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

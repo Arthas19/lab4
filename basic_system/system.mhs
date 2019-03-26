@@ -188,6 +188,7 @@ END
 BEGIN my_peripheral_lab4
  PARAMETER INSTANCE = my_peripheral_lab4_0
  PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE S_AXI = axi4lite_0
  PORT DIRECT_MODE_I = net_my_peripheral_lab4_0_DIRECT_MODE_I_pin
  PORT DISPLAY_MODE_I = net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin
  PORT VGA_HSYNC_O = my_peripheral_lab4_0_VGA_HSYNC_O
@@ -199,7 +200,7 @@ BEGIN my_peripheral_lab4
  PORT RED_O = my_peripheral_lab4_0_RED_O
  PORT GREEN_O = my_peripheral_lab4_0_GREEN_O
  PORT BLUE_O = my_peripheral_lab4_0_BLUE_O
- PORT S_AXI_ACLK = net_my_peripheral_lab4_0_S_AXI_ACLK_pin
+ PORT S_AXI_ACLK = clk_100_0000MHz
  PORT CLK_I = net_my_peripheral_lab4_0_CLK_I_pin
 END
 

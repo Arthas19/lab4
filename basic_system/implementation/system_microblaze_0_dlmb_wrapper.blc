@@ -6,8 +6,8 @@ xc6slx45fgg676-2 -intstyle silent -i -sd .. system_microblaze_0_dlmb_wrapper.ngc
 ../system_microblaze_0_dlmb_wrapper
 
 Reading NGO file
-"D:/folderi_sa_D/RA159-2016/LPRS2/lab3/basic_system/implementation/microblaze_0_
-dlmb_wrapper/system_microblaze_0_dlmb_wrapper.ngc" ...
+"D:/ra89-2016/lprs2/lab4/basic_system/implementation/microblaze_0_dlmb_wrapper/s
+ystem_microblaze_0_dlmb_wrapper.ngc" ...
 
 Partition Implementation Status
 -------------------------------
@@ -20,10 +20,10 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 159996 kilobytes
+Total memory usage is 159548 kilobytes
 
 Writing NGC file "../system_microblaze_0_dlmb_wrapper.ngc" ...
-Total REAL time to NGCBUILD completion:  2 sec
-Total CPU time to NGCBUILD completion:   2 sec
+Total REAL time to NGCBUILD completion:  1 sec
+Total CPU time to NGCBUILD completion:   1 sec
 
 Writing NGCBUILD log file "../system_microblaze_0_dlmb_wrapper.blc"...

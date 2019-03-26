@@ -10,7 +10,7 @@ lib my_peripheral_lab4_v1_00_a user_logic vhdl
 lib my_peripheral_lab4_v1_00_a my_peripheral_lab4 vhdl
 
 lib my_peripheral_lab4_v1_00_a char_rom vhdl
-lib my_peripheral_lab4_v1_00_a graphic_mem vhdl
+lib my_peripheral_lab4_v1_00_a graphics_mem vhdl
 lib my_peripheral_lab4_v1_00_a text_mem vhdl
 lib my_peripheral_lab4_v1_00_a vga vhdl
 lib my_peripheral_lab4_v1_00_a vga_sync vhdl

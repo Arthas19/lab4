@@ -1,4 +1,4 @@
-// File: D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system\implementation\system.bmm
+// File: D:\ra89-2016\lprs2\lab4\basic_system\implementation\system.bmm
 
 ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
 	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x00007fff]

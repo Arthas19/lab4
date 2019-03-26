@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- system_my_pheripherial_0_wrapper.vhd
+-- system_my_peripheral_lab4_0_wrapper.vhd
 -------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -7,10 +7,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
-library my_pheripherial_v1_00_a;
-use my_pheripherial_v1_00_a.all;
+library my_peripheral_lab4_v1_00_a;
+use my_peripheral_lab4_v1_00_a.all;
 
-entity system_my_pheripherial_0_wrapper is
+entity system_my_peripheral_lab4_0_wrapper is
   port (
     S_AXI_ACLK : in std_logic;
     S_AXI_ARESETN : in std_logic;
@@ -31,14 +31,25 @@ entity system_my_pheripherial_0_wrapper is
     S_AXI_BRESP : out std_logic_vector(1 downto 0);
     S_AXI_BVALID : out std_logic;
     S_AXI_AWREADY : out std_logic;
-    DIP_Data : in std_logic_vector(7 downto 0);
-    LED_Data : out std_logic_vector(7 downto 0)
+    CLK_I : in std_logic;
+    RESET_N_I : in std_logic;
+    DIRECT_MODE_I : in std_logic;
+    DISPLAY_MODE_I : in std_logic_vector(1 downto 0);
+    VGA_HSYNC_O : out std_logic;
+    VGA_VSYNC_O : out std_logic;
+    BLANK_O : out std_logic;
+    PIX_CLOCK_O : out std_logic;
+    PSAVE_O : out std_logic;
+    SYNC_O : out std_logic;
+    RED_O : out std_logic_vector(7 downto 0);
+    GREEN_O : out std_logic_vector(7 downto 0);
+    BLUE_O : out std_logic_vector(7 downto 0)
   );
-end system_my_pheripherial_0_wrapper;
+end system_my_peripheral_lab4_0_wrapper;
 
-architecture STRUCTURE of system_my_pheripherial_0_wrapper is
+architecture STRUCTURE of system_my_peripheral_lab4_0_wrapper is
 
-  component my_pheripherial is
+  component my_peripheral_lab4 is
     generic (
       C_S_AXI_DATA_WIDTH : INTEGER;
       C_S_AXI_ADDR_WIDTH : INTEGER;
@@ -73,22 +84,33 @@ architecture STRUCTURE of system_my_pheripherial_0_wrapper is
       S_AXI_BRESP : out std_logic_vector(1 downto 0);
       S_AXI_BVALID : out std_logic;
       S_AXI_AWREADY : out std_logic;
-      DIP_Data : in std_logic_vector(7 downto 0);
-      LED_Data : out std_logic_vector(7 downto 0)
+      CLK_I : in std_logic;
+      RESET_N_I : in std_logic;
+      DIRECT_MODE_I : in std_logic;
+      DISPLAY_MODE_I : in std_logic_vector(1  downto  0);
+      VGA_HSYNC_O : out std_logic;
+      VGA_VSYNC_O : out std_logic;
+      BLANK_O : out std_logic;
+      PIX_CLOCK_O : out std_logic;
+      PSAVE_O : out std_logic;
+      SYNC_O : out std_logic;
+      RED_O : out std_logic_vector(7  downto  0);
+      GREEN_O : out std_logic_vector(7  downto  0);
+      BLUE_O : out std_logic_vector(7  downto  0)
     );
   end component;
 
 begin
 
-  my_pheripherial_0 : my_pheripherial
+  my_peripheral_lab4_0 : my_peripheral_lab4
     generic map (
       C_S_AXI_DATA_WIDTH => 32,
       C_S_AXI_ADDR_WIDTH => 32,
       C_S_AXI_MIN_SIZE => X"000001ff",
       C_USE_WSTRB => 0,
       C_DPHASE_TIMEOUT => 8,
-      C_BASEADDR => X"79a00000",
-      C_HIGHADDR => X"79a0ffff",
+      C_BASEADDR => X"ffffffff",
+      C_HIGHADDR => X"00000000",
       C_FAMILY => "spartan6",
       C_NUM_REG => 1,
       C_NUM_MEM => 1,
@@ -115,8 +137,19 @@ begin
       S_AXI_BRESP => S_AXI_BRESP,
       S_AXI_BVALID => S_AXI_BVALID,
       S_AXI_AWREADY => S_AXI_AWREADY,
-      DIP_Data => DIP_Data,
-      LED_Data => LED_Data
+      CLK_I => CLK_I,
+      RESET_N_I => RESET_N_I,
+      DIRECT_MODE_I => DIRECT_MODE_I,
+      DISPLAY_MODE_I => DISPLAY_MODE_I,
+      VGA_HSYNC_O => VGA_HSYNC_O,
+      VGA_VSYNC_O => VGA_VSYNC_O,
+      BLANK_O => BLANK_O,
+      PIX_CLOCK_O => PIX_CLOCK_O,
+      PSAVE_O => PSAVE_O,
+      SYNC_O => SYNC_O,
+      RED_O => RED_O,
+      GREEN_O => GREEN_O,
+      BLUE_O => BLUE_O
     );
 
 end architecture STRUCTURE;

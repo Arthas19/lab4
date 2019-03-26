@@ -2,9 +2,17 @@
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 4 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 5 slave(s) 
 
 Checking port drivers...
+WARNING:EDK:4181 - PORT: my_pheripherial_0_DIP_Data_pin, CONNECTOR:
+   net_my_pheripherial_0_DIP_Data_pin - floating connection -
+   D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 20 
+WARNING:EDK:4181 - PORT: my_peripheral_lab4_0_S_AXI_ACLK_pin, CONNECTOR:
+   net_my_peripheral_lab4_0_S_AXI_ACLK_pin - floating connection -
+   D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 32 
+WARNING:EDK:4181 - PORT: GPIO_IO_O, CONNECTOR: LEDS_TRI_O - floating connection
+   - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 171 
 
 Performing Clock DRCs...
 
