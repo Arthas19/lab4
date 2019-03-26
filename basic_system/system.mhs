@@ -14,11 +14,23 @@
  PORT RS232_Uart_1_sout = RS232_Uart_1_sout, DIR = O
  PORT RS232_Uart_1_sin = RS232_Uart_1_sin, DIR = I
  PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
- PORT LEDS_TRI_O = my_pheripherial_0_LED_Data, DIR = O, VEC = [0:7]
  PORT DIP_Switches_TRI_I = DIP_Switches_TRI_I, DIR = I, VEC = [0:7]
  PORT CLK_P = CLK, DIR = I, DIFFERENTIAL_POLARITY = P, SIGIS = CLK, CLK_FREQ = 50000000
  PORT CLK_N = CLK, DIR = I, DIFFERENTIAL_POLARITY = N, SIGIS = CLK, CLK_FREQ = 50000000
  PORT my_pheripherial_0_DIP_Data_pin = net_my_pheripherial_0_DIP_Data_pin, DIR = I, VEC = [7:0]
+ PORT my_peripheral_lab4_0_DIRECT_MODE_I_pin = net_my_peripheral_lab4_0_DIRECT_MODE_I_pin, DIR = I
+ PORT my_peripheral_lab4_0_DISPLAY_MODE_I_pin = net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin, DIR = I, VEC = [1:0]
+ PORT my_peripheral_lab4_0_VGA_HSYNC_O_pin = my_peripheral_lab4_0_VGA_HSYNC_O, DIR = O
+ PORT my_peripheral_lab4_0_VGA_VSYNC_O_pin = my_peripheral_lab4_0_VGA_VSYNC_O, DIR = O
+ PORT my_peripheral_lab4_0_BLANK_O_pin = my_peripheral_lab4_0_BLANK_O, DIR = O
+ PORT my_peripheral_lab4_0_PIX_CLOCK_O_pin = my_peripheral_lab4_0_PIX_CLOCK_O, DIR = O
+ PORT my_peripheral_lab4_0_PSAVE_O_pin = my_peripheral_lab4_0_PSAVE_O, DIR = O
+ PORT my_peripheral_lab4_0_SYNC_O_pin = my_peripheral_lab4_0_SYNC_O, DIR = O
+ PORT my_peripheral_lab4_0_RED_O_pin = my_peripheral_lab4_0_RED_O, DIR = O, VEC = [7:0]
+ PORT my_peripheral_lab4_0_GREEN_O_pin = my_peripheral_lab4_0_GREEN_O, DIR = O, VEC = [7:0]
+ PORT my_peripheral_lab4_0_BLUE_O_pin = my_peripheral_lab4_0_BLUE_O, DIR = O, VEC = [7:0]
+ PORT my_peripheral_lab4_0_S_AXI_ACLK_pin = net_my_peripheral_lab4_0_S_AXI_ACLK_pin, DIR = I, SIGIS = CLK
+ PORT my_peripheral_lab4_0_CLK_I_pin = net_my_peripheral_lab4_0_CLK_I_pin, DIR = I, SIGIS = CLK
 
 
 BEGIN proc_sys_reset
@@ -173,13 +185,21 @@ BEGIN axi_gpio
  PORT GPIO_IO_I = DIP_Switches_TRI_I
 END
 
-BEGIN my_pheripherial
- PARAMETER INSTANCE = my_pheripherial_0
+BEGIN my_peripheral_lab4
+ PARAMETER INSTANCE = my_peripheral_lab4_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0x79a00000
- PARAMETER C_HIGHADDR = 0x79a0ffff
- PORT S_AXI_ACLK = clk_100_0000MHz
- PORT DIP_Data = DIP_Switches_TRI_I
- PORT LED_Data = my_pheripherial_0_LED_Data
+ PORT DIRECT_MODE_I = net_my_peripheral_lab4_0_DIRECT_MODE_I_pin
+ PORT DISPLAY_MODE_I = net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin
+ PORT VGA_HSYNC_O = my_peripheral_lab4_0_VGA_HSYNC_O
+ PORT VGA_VSYNC_O = my_peripheral_lab4_0_VGA_VSYNC_O
+ PORT BLANK_O = my_peripheral_lab4_0_BLANK_O
+ PORT PIX_CLOCK_O = my_peripheral_lab4_0_PIX_CLOCK_O
+ PORT PSAVE_O = my_peripheral_lab4_0_PSAVE_O
+ PORT SYNC_O = my_peripheral_lab4_0_SYNC_O
+ PORT RED_O = my_peripheral_lab4_0_RED_O
+ PORT GREEN_O = my_peripheral_lab4_0_GREEN_O
+ PORT BLUE_O = my_peripheral_lab4_0_BLUE_O
+ PORT S_AXI_ACLK = net_my_peripheral_lab4_0_S_AXI_ACLK_pin
+ PORT CLK_I = net_my_peripheral_lab4_0_CLK_I_pin
 END
 

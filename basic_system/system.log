@@ -1425,3 +1425,47 @@ Done writing filter settings to:
 	D:\ra89-2016\lprs2\lab3\basic_system\etc\system.filters
 Done writing Tab View settings to:
 	D:\ra89-2016\lprs2\lab3\basic_system\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:2137 - Peripheral my_pheripherial_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.6/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	D:\ra89-2016\lprs2\lab4\basic_system\etc\system.filters
+Done writing Tab View settings to:
+	D:\ra89-2016\lprs2\lab4\basic_system\etc\system.gui
+WARNING:EDK:2137 - Peripheral my_pheripherial_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Writing filter settings....
+Done writing filter settings to:
+	D:\ra89-2016\lprs2\lab4\basic_system\etc\system.filters
+Done writing Tab View settings to:
+	D:\ra89-2016\lprs2\lab4\basic_system\etc\system.gui
+WARNING:EDK:2137 - Peripheral my_pheripherial_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver my_peripheral_lab4 1.00.a for instance my_peripheral_lab4_0
+my_peripheral_lab4_0 has been added to the project
+WARNING:EDK:2137 - Peripheral my_pheripherial_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_pheripherial_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:1405 - File not found in any repository 'my_peripheral_lab4_v1_00_a/hdl/vhdl/graphic_mem.vhd'
+ERROR:EDK:1405 - File not found in any repository 'my_peripheral_lab4_v1_00_a/hdl/vhdl/graphic_mem.vhd'
+ERROR:EDK:1405 - File not found in any repository 'my_peripheral_lab4_v1_00_a/hdl/vhdl/graphic_mem.vhd'
+Deleting External port : LEDS_TRI_O 
+Deleting Internal port my_pheripherial_0:LED_Data 
+my_pheripherial_0 has been deleted from the project
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK:2137 - Peripheral my_peripheral_lab4_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 

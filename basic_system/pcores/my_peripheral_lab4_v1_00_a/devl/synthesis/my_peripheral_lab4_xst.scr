@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a\devl\synthesis\my_peripheral_lab4_xst.prj"
+-top my_peripheral_lab4
+-p virtex6
+-ofn "D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a\devl\synthesis\my_peripheral_lab4_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib my_peripheral_lab4_v1_00_a
