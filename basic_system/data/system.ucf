@@ -8,6 +8,9 @@
 NET "CLK" TNM_NET = sys_clk_pin;
 TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
 
+
+# ovo ispod se brise
+
 NET CLK_N LOC = AF14 | IOSTANDARD = LVDS_33; NET CLK_P LOC = AD14 | IOSTANDARD = LVDS_33;
 NET RESET LOC = AE24 | IOSTANDARD = LVCMOS33;
 NET RS232_Uart_1_sin LOC = A21 | IOSTANDARD = LVTTL; 
