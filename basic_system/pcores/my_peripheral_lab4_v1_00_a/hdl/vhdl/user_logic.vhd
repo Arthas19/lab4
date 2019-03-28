@@ -510,17 +510,17 @@ begin
 	end process;
 	
 	char_value <= "001000" when char_address = 40 + offset else --H 8 
-					  "000101" when char_address = 41 + offset else --E 5
-					  "001100" when char_address = 42 + offset else --L 12
-					  "001100" when char_address = 43 + offset else --L 12
-					  "001111" when char_address = 44 + offset else --O 15
-					  "100000" when char_address = 45 + offset else --space 32
-					  "010111" when char_address = 46 + offset else --W 23
-					  "001111" when char_address = 47 + offset else --O 15
-					  "010010" when char_address = 48 + offset else --R 18
-					  "001100" when char_address = 49 + offset else --L 12
-					  "000100" when char_address = 50 + offset else --D 4
-					  "100000";                                     --space 32
+				  "000101" when char_address = 41 + offset else --E 5
+				  "001100" when char_address = 42 + offset else --L 12
+				  "001100" when char_address = 43 + offset else --L 12
+				  "001111" when char_address = 44 + offset else --O 15
+				  "100000" when char_address = 45 + offset else --space 32
+				  "010111" when char_address = 46 + offset else --W 23
+				  "001111" when char_address = 47 + offset else --O 15					  
+				  "010010" when char_address = 48 + offset else --R 18
+				  "001100" when char_address = 49 + offset else --L 12
+				  "000100" when char_address = 50 + offset else --D 4
+				  "100000";                                     --space 32
   
   -- koristeci signale realizovati logiku koja pise po GRAPH_MEM
   --pixel_address
@@ -528,16 +528,6 @@ begin
   --pixel_we
  
 	pixel_we <= '1';
-	
---	process(pix_clock_s) begin
---		if rising_edge(pix_clock_s) then
---			if (pixel_address = 9600) then
---				pixel_address <= (others => '0');
---			else
---				pixel_address <= pixel_address + 1;
---			end if;
---		end if;
---	end process;
 	
 	process(pix_clock_s, cnt) begin
 		if rising_edge(pix_clock_s) then
@@ -565,31 +555,31 @@ begin
                    X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 80)  else
                    X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 100) else
                    X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 120) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 140) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 160) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 180) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 200) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 220) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 240) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 260) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 280) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 300) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 320) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 340) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 360) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 380) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 400) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 420) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 440) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 460) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 480) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 500) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 520) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 540) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 560) else
-                  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 580) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 600) else
-				  X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 620) else
-                  X"00000000";
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 140) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 160) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 180) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 200) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 220) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 240) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 260) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 280) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 300) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 320) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 340) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 360) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 380) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 400) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 420) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 440) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 460) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 480) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 500) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 520) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 540) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 560) else
+                   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 580) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 600) else
+				   X"ffffffff" when pixel_address = (pixel_row_s + pixel_col_s + 620) else
+                   X"00000000";
   
 end IMP;

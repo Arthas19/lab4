@@ -15,3 +15,8 @@ lib my_peripheral_lab4_v1_00_a text_mem vhdl
 lib my_peripheral_lab4_v1_00_a vga vhdl
 lib my_peripheral_lab4_v1_00_a vga_sync vhdl
 lib my_peripheral_lab4_v1_00_a vga_top vhdl
+
+lib my_peripheral_lab4_v1_00_a dcm25MHz.vhd
+lib my_peripheral_lab4_v1_00_a dcm50MHz.vhd
+lib my_peripheral_lab4_v1_00_a dcm75MHz.vhd
+lib my_peripheral_lab4_v1_00_a dcm108MHz.vhd
