@@ -58,7 +58,7 @@ PORT S_AXI_AWREADY = AWREADY, DIR = O, BUS = S_AXI
 
 ## Our ports
 PORT CLK_I = "", DIR = I, SIGIS = CLK
-PORT RESET_N_I = "", DIR = I, SIGIS = RST
+PORT RESET_N_I = "", DIR = I,
 
 PORT DIRECT_MODE_I = "", DIR = I
 PORT DISPLAY_MODE_I = "", DIR = I, VEC = [1 : 0]

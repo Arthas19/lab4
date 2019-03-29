@@ -28,7 +28,8 @@ entity system is
     my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
     my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
+    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
+    LEDS_GPIO_IO_pin : inout std_logic_vector(7 downto 0)
   );
 end system;
 
@@ -1748,11 +1749,23 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component IOBUF is
+    port (
+      I : in std_logic;
+      IO : inout std_logic;
+      O : out std_logic;
+      T : in std_logic
+    );
+  end component;
+
   -- Internal signals
 
   signal CLK : std_logic;
   signal Ext_BRK : std_logic;
   signal Ext_NM_BRK : std_logic;
+  signal LEDS_GPIO_IO_I : std_logic_vector(7 downto 0);
+  signal LEDS_GPIO_IO_T : std_logic_vector(7 downto 0);
+  signal LEDS_TRI_O : std_logic_vector(7 downto 0);
   signal axi4lite_0_M_ARADDR : std_logic_vector(159 downto 0);
   signal axi4lite_0_M_ARESETN : std_logic_vector(4 downto 0);
   signal axi4lite_0_M_ARREADY : std_logic_vector(4 downto 0);
@@ -1889,7 +1902,6 @@ architecture STRUCTURE of system is
   signal net_gnd3 : std_logic_vector(0 to 2);
   signal net_gnd4 : std_logic_vector(0 to 3);
   signal net_gnd5 : std_logic_vector(4 downto 0);
-  signal net_gnd8 : std_logic_vector(7 downto 0);
   signal net_gnd16 : std_logic_vector(0 to 15);
   signal net_gnd32 : std_logic_vector(0 to 31);
   signal net_gnd4096 : std_logic_vector(0 to 4095);
@@ -1897,6 +1909,7 @@ architecture STRUCTURE of system is
   signal net_my_peripheral_lab4_0_DIRECT_MODE_I_pin : std_logic;
   signal net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin : std_logic_vector(1 downto 0);
   signal net_my_peripheral_lab4_0_RESET_N_I_pin : std_logic;
+  signal net_my_pheripherial_0_DIP_Data_pin : std_logic_vector(7 downto 0);
   signal net_vcc0 : std_logic;
   signal pgassign1 : std_logic_vector(4 downto 0);
   signal proc_sys_reset_0_BUS_STRUCT_RESET : std_logic_vector(0 to 0);
@@ -1925,6 +1938,7 @@ begin
 
   -- Internal assignments
 
+  net_my_pheripherial_0_DIP_Data_pin <= my_pheripherial_0_DIP_Data_pin;
   net_my_peripheral_lab4_0_RESET_N_I_pin <= my_peripheral_lab4_0_RESET_N_I_pin;
   net_my_peripheral_lab4_0_DIRECT_MODE_I_pin <= my_peripheral_lab4_0_DIRECT_MODE_I_pin;
   net_my_peripheral_lab4_0_DISPLAY_MODE_I_pin <= my_peripheral_lab4_0_DISPLAY_MODE_I_pin;
@@ -1952,7 +1966,6 @@ begin
   net_gnd4(0 to 3) <= B"0000";
   net_gnd4096(0 to 4095) <= X"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
   net_gnd5(4 downto 0) <= B"00000";
-  net_gnd8(7 downto 0) <= B"00000000";
   net_vcc0 <= '1';
 
   proc_sys_reset_0 : system_proc_sys_reset_0_wrapper
@@ -3573,9 +3586,9 @@ begin
       S_AXI_RVALID => axi4lite_0_M_RVALID(2),
       S_AXI_RREADY => axi4lite_0_M_RREADY(2),
       IP2INTC_Irpt => open,
-      GPIO_IO_I => net_gnd8,
-      GPIO_IO_O => open,
-      GPIO_IO_T => open,
+      GPIO_IO_I => LEDS_GPIO_IO_I,
+      GPIO_IO_O => LEDS_TRI_O,
+      GPIO_IO_T => LEDS_GPIO_IO_T,
       GPIO2_IO_I => net_gnd32(0 to 31),
       GPIO2_IO_O => open,
       GPIO2_IO_T => open
@@ -3603,7 +3616,7 @@ begin
       S_AXI_RVALID => axi4lite_0_M_RVALID(3),
       S_AXI_RREADY => axi4lite_0_M_RREADY(3),
       IP2INTC_Irpt => open,
-      GPIO_IO_I => DIP_Switches_TRI_I(0 to 7),
+      GPIO_IO_I => net_my_pheripherial_0_DIP_Data_pin,
       GPIO_IO_O => open,
       GPIO_IO_T => open,
       GPIO2_IO_I => net_gnd32(0 to 31),
@@ -3652,6 +3665,70 @@ begin
       I => CLK_P,
       IB => CLK_N,
       O => CLK
+    );
+
+  iobuf_1 : IOBUF
+    port map (
+      I => LEDS_TRI_O(7),
+      IO => LEDS_GPIO_IO_pin(7),
+      O => LEDS_GPIO_IO_I(7),
+      T => LEDS_GPIO_IO_T(7)
+    );
+
+  iobuf_2 : IOBUF
+    port map (
+      I => LEDS_TRI_O(6),
+      IO => LEDS_GPIO_IO_pin(6),
+      O => LEDS_GPIO_IO_I(6),
+      T => LEDS_GPIO_IO_T(6)
+    );
+
+  iobuf_3 : IOBUF
+    port map (
+      I => LEDS_TRI_O(5),
+      IO => LEDS_GPIO_IO_pin(5),
+      O => LEDS_GPIO_IO_I(5),
+      T => LEDS_GPIO_IO_T(5)
+    );
+
+  iobuf_4 : IOBUF
+    port map (
+      I => LEDS_TRI_O(4),
+      IO => LEDS_GPIO_IO_pin(4),
+      O => LEDS_GPIO_IO_I(4),
+      T => LEDS_GPIO_IO_T(4)
+    );
+
+  iobuf_5 : IOBUF
+    port map (
+      I => LEDS_TRI_O(3),
+      IO => LEDS_GPIO_IO_pin(3),
+      O => LEDS_GPIO_IO_I(3),
+      T => LEDS_GPIO_IO_T(3)
+    );
+
+  iobuf_6 : IOBUF
+    port map (
+      I => LEDS_TRI_O(2),
+      IO => LEDS_GPIO_IO_pin(2),
+      O => LEDS_GPIO_IO_I(2),
+      T => LEDS_GPIO_IO_T(2)
+    );
+
+  iobuf_7 : IOBUF
+    port map (
+      I => LEDS_TRI_O(1),
+      IO => LEDS_GPIO_IO_pin(1),
+      O => LEDS_GPIO_IO_I(1),
+      T => LEDS_GPIO_IO_T(1)
+    );
+
+  iobuf_8 : IOBUF
+    port map (
+      I => LEDS_TRI_O(0),
+      IO => LEDS_GPIO_IO_pin(0),
+      O => LEDS_GPIO_IO_I(0),
+      T => LEDS_GPIO_IO_T(0)
     );
 
 end architecture STRUCTURE;

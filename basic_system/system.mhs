@@ -31,6 +31,7 @@
  PORT my_peripheral_lab4_0_RED_O_pin = my_peripheral_lab4_0_RED_O, DIR = O, VEC = [7:0]
  PORT my_peripheral_lab4_0_GREEN_O_pin = my_peripheral_lab4_0_GREEN_O, DIR = O, VEC = [7:0]
  PORT my_peripheral_lab4_0_BLUE_O_pin = my_peripheral_lab4_0_BLUE_O, DIR = O, VEC = [7:0]
+ PORT LEDS_GPIO_IO_pin = LEDS_GPIO_IO, DIR = IO, VEC = [7:0]
 
 
 BEGIN proc_sys_reset
@@ -169,6 +170,7 @@ BEGIN axi_gpio
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = clk_100_0000MHz
  PORT GPIO_IO_O = LEDS_TRI_O
+ PORT GPIO_IO = LEDS_GPIO_IO
 END
 
 BEGIN axi_gpio
@@ -182,7 +184,7 @@ BEGIN axi_gpio
  PARAMETER C_HIGHADDR = 0x4002ffff
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = clk_100_0000MHz
- PORT GPIO_IO_I = DIP_Switches_TRI_I
+ PORT GPIO_IO_I = net_my_pheripherial_0_DIP_Data_pin
 END
 
 BEGIN my_peripheral_lab4

@@ -127,4 +127,8 @@ vhdl my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_p
 vhdl my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd
 vhdl my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_sync.vhd
 vhdl my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd
+VHDL my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm25MHz.vhd
+VHDL my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm50MHz.vhd
+VHDL my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm75MHz.vhd
+VHDL my_peripheral_lab4_v1_00_a D:\ra89-2016\lprs2\lab4\basic_system\pcores\my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm108MHz.vhd
 vhdl work ../hdl/system_my_peripheral_lab4_0_wrapper.vhd

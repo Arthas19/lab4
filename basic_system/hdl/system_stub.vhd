@@ -28,7 +28,8 @@ entity system_stub is
     my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
     my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
     my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
+    my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
+    LEDS_GPIO_IO_pin : inout std_logic_vector(7 downto 0)
   );
 end system_stub;
 
@@ -55,7 +56,8 @@ architecture STRUCTURE of system_stub is
       my_peripheral_lab4_0_SYNC_O_pin : out std_logic;
       my_peripheral_lab4_0_RED_O_pin : out std_logic_vector(7 downto 0);
       my_peripheral_lab4_0_GREEN_O_pin : out std_logic_vector(7 downto 0);
-      my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0)
+      my_peripheral_lab4_0_BLUE_O_pin : out std_logic_vector(7 downto 0);
+      LEDS_GPIO_IO_pin : inout std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -85,7 +87,8 @@ begin
       my_peripheral_lab4_0_SYNC_O_pin => my_peripheral_lab4_0_SYNC_O_pin,
       my_peripheral_lab4_0_RED_O_pin => my_peripheral_lab4_0_RED_O_pin,
       my_peripheral_lab4_0_GREEN_O_pin => my_peripheral_lab4_0_GREEN_O_pin,
-      my_peripheral_lab4_0_BLUE_O_pin => my_peripheral_lab4_0_BLUE_O_pin
+      my_peripheral_lab4_0_BLUE_O_pin => my_peripheral_lab4_0_BLUE_O_pin,
+      LEDS_GPIO_IO_pin => LEDS_GPIO_IO_pin
     );
 
 end architecture STRUCTURE;

@@ -15,6 +15,8 @@ Loading design module
 "D:/ra89-2016/lprs2/lab4/basic_system/implementation/system_my_peripheral_lab4_0
 _wrapper.ngc"...
 Loading design module
+"D:/ra89-2016/lprs2/lab4/basic_system/implementation/char_rom_def.ngc"...
+Loading design module
 "D:/ra89-2016/lprs2/lab4/basic_system/implementation/system_rs232_wrapper.ngc"..
 .
 Loading design module
@@ -69,6 +71,13 @@ Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "system.ucf" ...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/
+   BRAM_MEM_I/B6/RAMB16BWER' of type RAMB16BWER has been changed from
+   'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing simulation
+   for this primitive.  In order for functional simulation to be correct, the
+   value of SIM_DEVICE should be changed in this same manner in the source
+   netlist or constraint file.
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:135 - Constraint <INST
@@ -81,117 +90,9 @@ WARNING:ConstraintSystem:135 - Constraint <INST
 WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
    PADS CPUS;>: CPUS "*" does not match any design objects.
 
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(0) LOC = N24 |>
-   [system.ucf(23)]: NET "LEDS_TRI_O(0)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(0) LOC = N24 |> [system.ucf(23)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(23)]:
-   NET "LEDS_TRI_O(0)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(1) LOC = N23 |>
-   [system.ucf(24)]: NET "LEDS_TRI_O(1)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(1) LOC = N23 |> [system.ucf(24)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(24)]:
-   NET "LEDS_TRI_O(1)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(2) LOC = M24 |>
-   [system.ucf(25)]: NET "LEDS_TRI_O(2)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(2) LOC = M24 |> [system.ucf(25)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(25)]:
-   NET "LEDS_TRI_O(2)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(3) LOC = L24 |>
-   [system.ucf(26)]: NET "LEDS_TRI_O(3)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(3) LOC = L24 |> [system.ucf(26)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(26)]:
-   NET "LEDS_TRI_O(3)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(4) LOC = L23 |>
-   [system.ucf(27)]: NET "LEDS_TRI_O(4)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(4) LOC = L23 |> [system.ucf(27)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(27)]:
-   NET "LEDS_TRI_O(4)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(5) LOC = K24 |>
-   [system.ucf(28)]: NET "LEDS_TRI_O(5)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(5) LOC = K24 |> [system.ucf(28)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(28)]:
-   NET "LEDS_TRI_O(5)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(6) LOC = H24 |>
-   [system.ucf(29)]: NET "LEDS_TRI_O(6)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(6) LOC = H24 |> [system.ucf(29)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(29)]:
-   NET "LEDS_TRI_O(6)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET LEDS_TRI_O(7) LOC = D24 |>
-   [system.ucf(30)]: NET "LEDS_TRI_O(7)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET LEDS_TRI_O(7) LOC = D24 |> [system.ucf(30)]' could not be found and so
-   the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL;> [system.ucf(30)]:
-   NET "LEDS_TRI_O(7)" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CLK = PERIOD CLK 41.667 ns
+   HIGH 50 %;> [system.ucf(18)]: Unable to find an active 'TNM' or 'TimeGrp'
+   constraint named 'CLK'.
 
 WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
    directly or indirectly drive any flip-flops, latches and/or RAMs and is not
@@ -210,18 +111,6 @@ Done...
 Processing BMM file "system.bmm" ...
 
 Checking expanded design ...
-ERROR:NgdBuild:604 - logical block
-   'my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/
-   BRAM_MEM_I' with type 'char_rom_def' could not be resolved. A pin name
-   misspelling can cause this, a missing edif or ngc file, case mismatch between
-   the block name and the edif or ngc file name, or the misspelling of a type
-   name. Symbol 'char_rom_def' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/res_1
-   .dcm25_i' with type 'dcm25MHz' could not be resolved. A pin name misspelling
-   can cause this, a missing edif or ngc file, case mismatch between the block
-   name and the edif or ngc file name, or the misspelling of a type name. Symbol
-   'dcm25MHz' is not supported in target 'spartan6'.
 WARNING:NgdBuild:443 - SFF primitive
    'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
    Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
@@ -234,14 +123,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:    18
-  Number of warnings:  12
+  Number of errors:     0
+  Number of warnings:   6
 
-Total memory usage is 211136 kilobytes
+Total memory usage is 211520 kilobytes
 
+Writing NGD file "system.ngd" ...
 Total REAL time to NGDBUILD completion:  31 sec
 Total CPU time to NGDBUILD completion:   31 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "system.bld"...

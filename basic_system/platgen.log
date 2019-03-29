@@ -89,11 +89,11 @@ IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s)
 IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 5 slave(s) 
 
 Checking port drivers...
-WARNING:EDK:4181 - PORT: my_pheripherial_0_DIP_Data_pin, CONNECTOR:
-   net_my_pheripherial_0_DIP_Data_pin - floating connection -
-   D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 20 
+WARNING:EDK:4181 - PORT: DIP_Switches_TRI_I, CONNECTOR: DIP_Switches_TRI_I -
+   floating connection - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 17
+    
 WARNING:EDK:4181 - PORT: GPIO_IO_O, CONNECTOR: LEDS_TRI_O - floating connection
-   - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 171 
+   - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 172 
 
 Performing Clock DRCs...
 
@@ -175,44 +175,12 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
-IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 36 - Copying cache
-implementation netlist
-IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 49 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 56 - Copying cache
-implementation netlist
-IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 65 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 72 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 81 - Copying cache
-implementation netlist
-IPNAME:microblaze INSTANCE:microblaze_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 88 - Copying cache
-implementation netlist
-IPNAME:mdm INSTANCE:debug_module -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 111 - Copying cache
-implementation netlist
-IPNAME:axi_uartlite INSTANCE:rs232 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 145 - Copying cache
-implementation netlist
-IPNAME:axi_gpio INSTANCE:leds - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
-line 160 - Copying cache implementation netlist
-IPNAME:axi_gpio INSTANCE:dip_switches -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 174 - Copying cache
-implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 81 - elaborating IP
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 82 - elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 124 - elaborating IP
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 125 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -220,7 +188,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -236,22 +204,50 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:proc_sys_reset_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line
+37 - Running XST synthesis
+INSTANCE:microblaze_0_ilmb - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
+line 50 - Running XST synthesis
+INSTANCE:microblaze_0_i_bram_ctrl -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 57 - Running XST synthesis
+INSTANCE:microblaze_0_dlmb - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
+line 66 - Running XST synthesis
+INSTANCE:microblaze_0_d_bram_ctrl -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 73 - Running XST synthesis
+INSTANCE:microblaze_0_bram_block -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 82 - Running XST synthesis
+INSTANCE:microblaze_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 89
+- Running XST synthesis
+INSTANCE:debug_module - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 112
+- Running XST synthesis
 INSTANCE:clock_generator_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
-line 124 - Running XST synthesis
-INSTANCE:axi4lite_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 137 -
+line 125 - Running XST synthesis
+INSTANCE:axi4lite_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 138 -
 Running XST synthesis
+INSTANCE:rs232 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 146 -
+Running XST synthesis
+INSTANCE:leds - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 161 -
+Running XST synthesis
+INSTANCE:dip_switches - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 176
+- Running XST synthesis
 INSTANCE:my_peripheral_lab4_0 - D:\ra89-2016\lprs2\lab4\basic_system\system.mhs
-line 188 - Running XST synthesis
+line 190 - Running XST synthesis
 
 Running NGCBUILD ...
+IPNAME:system_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 50 - Running NGCBUILD
+IPNAME:system_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 66 - Running NGCBUILD
+IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 89 - Running NGCBUILD
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 124 - Running NGCBUILD
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 125 - Running NGCBUILD
 IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 137 - Running NGCBUILD
+D:\ra89-2016\lprs2\lab4\basic_system\system.mhs line 138 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 33.00 seconds
+Total run time: 130.00 seconds

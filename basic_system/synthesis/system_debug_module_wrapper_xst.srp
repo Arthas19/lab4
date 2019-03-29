@@ -938,11 +938,11 @@ debug_module/update|         |    4.477|   10.280|         |
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.63 secs
+Total CPU time to Xst completion: 6.38 secs
  
 --> 
 
-Total memory usage is 266224 kilobytes
+Total memory usage is 266992 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  113 (   0 filtered)
