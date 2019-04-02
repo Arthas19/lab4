@@ -283,6 +283,8 @@ architecture IMP of user_logic is
   signal slv_ip2bus_data                : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
+  
+ 
 
   
   
@@ -366,8 +368,8 @@ begin
   graphics_lenght <= conv_std_logic_vector(MEM_SIZE*8*8, GRAPH_MEM_ADDR_WIDTH);
   
   -- removed to inputs pin
-  direct_mode <= '0';
-  display_mode     <= "10";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
+  direct_mode <= '1';
+  display_mode     <= "01";  -- 01 - text mode, 10 - graphics mode, 11 - text & graphics
   
   font_size        <= x"1";
   show_frame       <= '1';

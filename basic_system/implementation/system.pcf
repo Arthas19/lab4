@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Fri Mar 29 12:06:14 2019
+// Written by: Map P.68d on Tue Apr 02 11:10:42 2019
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -3245,10 +3245,10 @@ TIMEGRP
         "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/char_address_12"
         BEL
         "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/char_address_13"
-        PIN
-        "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I/B6/RAMB16BWER_pins<11>"
         BEL
         "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/SRL16_inst/SRL16E"
+        PIN
+        "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I/B6/RAMB16BWER_pins<11>"
         PIN
         "my_peripheral_lab4_0/my_peripheral_lab4_0/USER_LOGIC_I/clk5m_inst_pins<1>"
         PIN

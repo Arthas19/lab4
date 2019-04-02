@@ -1,6 +1,6 @@
 Release 14.6 - xst P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\ra89-2016\lprs2\lab4\basic_system\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to D:\materija\ra89-2016\lab4\basic_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_my_peripheral_lab4_0_wrapper_xst.prj"
-Verilog Include Directory          : {"D:\ra89-2016\lprs2\lab4\basic_system\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"D:\materija\ra89-2016\lab4\basic_system\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx45fgg676-2
@@ -427,43 +427,43 @@ Parsing architecture <imp> of entity <slave_attachment>.
 Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
 Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <user_logic>.
 Parsing architecture <IMP> of entity <user_logic>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <my_peripheral_lab4>.
 Parsing architecture <IMP> of entity <my_peripheral_lab4>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <char_rom>.
 Parsing architecture <Behavioral> of entity <char_rom>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/graphics_mem.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/graphics_mem.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <graphics_mem>.
 Parsing architecture <arc_graphics_mem> of entity <graphics_mem>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/text_mem.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/text_mem.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <text_mem>.
 Parsing architecture <arc_text_mem> of entity <text_mem>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <vga>.
 Parsing architecture <rtl> of entity <vga>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_sync.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_sync.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <vga_sync>.
 Parsing architecture <rtl> of entity <vga_sync>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <vga_top>.
 Parsing architecture <rtl> of entity <vga_top>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm25MHz.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm25MHz.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <dcm25MHz>.
 Parsing architecture <xilinx> of entity <dcm25mhz>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm50MHz.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm50MHz.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <dcm50MHz>.
 Parsing architecture <xilinx> of entity <dcm50mhz>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm75MHz.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm75MHz.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <dcm75MHz>.
 Parsing architecture <xilinx> of entity <dcm75mhz>.
-Parsing VHDL file "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm108MHz.vhd" into library my_peripheral_lab4_v1_00_a
+Parsing VHDL file "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm108MHz.vhd" into library my_peripheral_lab4_v1_00_a
 Parsing entity <dcm108MHz>.
 Parsing architecture <xilinx> of entity <dcm108mhz>.
-Parsing VHDL file "D:\ra89-2016\lprs2\lab4\basic_system\hdl\system_my_peripheral_lab4_0_wrapper.vhd" into library work
+Parsing VHDL file "D:\materija\ra89-2016\lab4\basic_system\hdl\system_my_peripheral_lab4_0_wrapper.vhd" into library work
 Parsing entity <system_my_peripheral_lab4_0_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_my_peripheral_lab4_0_wrapper>.
 
@@ -483,44 +483,44 @@ Elaborating entity <address_decoder> (architecture <IMP>) with generics from lib
 INFO:HDLCompiler:679 - "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
 
 Elaborating entity <user_logic> (architecture <IMP>) with generics from library <my_peripheral_lab4_v1_00_a>.
-WARNING:HDLCompiler:1127 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 361: Assignment to message_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 366: Assignment to graphics_lenght ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 369: Assignment to direct_mode ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 370: Assignment to display_mode ignored, since the identifier is never used
-WARNING:HDLCompiler:89 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 217: <oddr2> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:1127 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 361: Assignment to message_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 366: Assignment to graphics_lenght ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 369: Assignment to direct_mode ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 370: Assignment to display_mode ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 217: <oddr2> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_top> (architecture <rtl>) with generics from library <my_peripheral_lab4_v1_00_a>.
 
 Elaborating entity <vga> (architecture <rtl>) with generics from library <my_peripheral_lab4_v1_00_a>.
-WARNING:HDLCompiler:89 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd" Line 123: <srl16> remains a black-box since it has no binding entity.
 
 Elaborating entity <vga_sync> (architecture <rtl>) with generics from library <my_peripheral_lab4_v1_00_a>.
 
 Elaborating entity <dcm25MHz> (architecture <xilinx>) from library <my_peripheral_lab4_v1_00_a>.
 
 Elaborating entity <char_rom> (architecture <Behavioral>) from library <my_peripheral_lab4_v1_00_a>.
-WARNING:HDLCompiler:89 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" Line 40: <char_rom_def> remains a black-box since it has no binding entity.
-INFO:HDLCompiler:679 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:89 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" Line 40: <char_rom_def> remains a black-box since it has no binding entity.
+INFO:HDLCompiler:679 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd" Line 77. Case statement is complete. others clause is never selected
 
 Elaborating entity <text_mem> (architecture <arc_text_mem>) with generics from library <my_peripheral_lab4_v1_00_a>.
 
 Elaborating entity <graphics_mem> (architecture <arc_graphics_mem>) with generics from library <my_peripheral_lab4_v1_00_a>.
-WARNING:HDLCompiler:1127 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 257: Net <pixel_address[19]> does not have a driver.
-WARNING:HDLCompiler:634 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 274: Net <pixel_row_s[13]> does not have a driver.
+WARNING:HDLCompiler:1127 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd" Line 301: Assignment to grid_size ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 257: Net <pixel_address[19]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" Line 274: Net <pixel_row_s[13]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_my_peripheral_lab4_0_wrapper>.
-    Related source file is "D:\ra89-2016\lprs2\lab4\basic_system\hdl\system_my_peripheral_lab4_0_wrapper.vhd".
+    Related source file is "D:\materija\ra89-2016\lab4\basic_system\hdl\system_my_peripheral_lab4_0_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_my_peripheral_lab4_0_wrapper> synthesized.
 
 Synthesizing Unit <my_peripheral_lab4>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         C_S_AXI_DATA_WIDTH = 32
@@ -539,9 +539,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/my_peripheral_lab4.vhd" line 257: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <my_peripheral_lab4> synthesized.
@@ -621,7 +621,7 @@ WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and
 Unit <address_decoder> synthesized.
 
 Synthesizing Unit <user_logic>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd".
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         RES_TYPE = 1
@@ -631,8 +631,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" line 397: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" line 397: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" line 397: Output port <dir_pixel_row_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/user_logic.vhd" line 397: Output port <vga_rst_n_o> of the instance <vga_top_i> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <pixel_address> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <pixel_row_s> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 14-bit register for signal <char_address>.
@@ -708,7 +708,7 @@ WARNING:Xst:653 - Signal <pixel_row_s> is used but never assigned. This sourcele
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <vga_top>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_top.vhd".
         H_RES = 640
         V_RES = 480
         MEM_ADDR_WIDTH = 14
@@ -731,7 +731,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <active_pixel_s>. Latches may be 
 Unit <vga_top> synthesized.
 
 Synthesizing Unit <vga>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga.vhd".
         RESOLUTION_TYPE = 1
         H_RES = 640
         V_RES = 480
@@ -741,7 +741,7 @@ Synthesizing Unit <vga>.
 Unit <vga> synthesized.
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_sync.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/vga_sync.vhd".
         HORIZONTAL_RES = 640
         VERTICAL_RES = 480
         FRAME_SIZE = 4
@@ -784,20 +784,20 @@ Synthesizing Unit <vga_sync>.
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <dcm25MHz>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm25MHz.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/dcm25MHz.vhd".
     Summary:
 	no macro.
 Unit <dcm25MHz> synthesized.
 
 Synthesizing Unit <char_rom>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/char_rom.vhd".
     Found 1-bit 8-to-1 multiplexer for signal <rom_mux_output_o> created at line 67.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <char_rom> synthesized.
 
 Synthesizing Unit <text_mem>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/text_mem.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/text_mem.vhd".
         MEM_ADDR_WIDTH = 14
         MEM_DATA_WIDTH = 6
         MEM_SIZE = 4800
@@ -815,7 +815,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <text_me
 Unit <text_mem> synthesized.
 
 Synthesizing Unit <graphics_mem>.
-    Related source file is "D:/ra89-2016/lprs2/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/graphics_mem.vhd".
+    Related source file is "D:/materija/ra89-2016/lab4/basic_system/pcores/my_peripheral_lab4_v1_00_a/hdl/vhdl/graphics_mem.vhd".
         MEM_ADDR_WIDTH = 20
         MEM_DATA_WIDTH = 32
         MEM_SIZE = 307200
@@ -885,6 +885,9 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <../implementation/char_rom_def.ngc>.
+Loading core <char_rom_def> for timing and area information for instance <BRAM_MEM_I>.
+INFO:Xst:1901 - Instance B6 in unit char_rom_def of type RAMB16_S9 has been replaced by RAMB16BWER
 
 Synthesizing (advanced) Unit <graphics_mem>.
 INFO:Xst:3226 - The RAM <Mram_graphics_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd_value>
@@ -1123,8 +1126,8 @@ Top Level Output File Name         : system_my_peripheral_lab4_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 228
-#      GND                         : 1
+# BELS                             : 230
+#      GND                         : 2
 #      INV                         : 6
 #      LUT1                        : 13
 #      LUT2                        : 8
@@ -1134,7 +1137,7 @@ Primitive and Black Box Usage:
 #      LUT6                        : 55
 #      MUXCY                       : 31
 #      MUXF7                       : 3
-#      VCC                         : 1
+#      VCC                         : 2
 #      XORCY                       : 34
 # FlipFlops/Latches                : 127
 #      FD                          : 5
@@ -1144,8 +1147,8 @@ Primitive and Black Box Usage:
 #      FDSE                        : 1
 #      LD                          : 1
 #      ODDR2                       : 1
-# RAMS                             : 4
-#      RAMB16BWER                  : 4
+# RAMS                             : 5
+#      RAMB16BWER                  : 5
 # Shift Registers                  : 1
 #      SRL16                       : 1
 # Clock Buffers                    : 1
@@ -1156,8 +1159,6 @@ Primitive and Black Box Usage:
 #      DCM_SP                      : 1
 # DSPs                             : 2
 #      DSP48A1                     : 2
-# Others                           : 1
-#      char_rom_def                : 1
 
 Device utilization summary:
 ---------------------------
@@ -1184,8 +1185,8 @@ IO Utilization:
  Number of bonded IOBs:                   1  out of    358     0%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                4  out of    116     3%  
-    Number using Block RAM only:          4
+ Number of Block RAM/FIFO:                5  out of    116     4%  
+    Number using Block RAM only:          5
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
  Number of DSP48A1s:                      2  out of     58     3%  
 
@@ -1210,7 +1211,7 @@ Clock Information:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                       | Clock buffer(FF name)                                              | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
-CLK_I                                                                                                                                                                              | DCM_SP:CLKFX                                                       | 59    |
+CLK_I                                                                                                                                                                              | DCM_SP:CLKFX                                                       | 60    |
 S_AXI_ACLK                                                                                                                                                                         | NONE(my_peripheral_lab4_0/USER_LOGIC_I/slv_reg0_31)                | 75    |
 my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_30_o(my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_30_o1:O)| NONE(*)(my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s)| 1     |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
@@ -1228,7 +1229,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 9.758ns (Maximum Frequency: 102.477MHz)
-   Minimum input arrival time before clock: 2.463ns
+   Minimum input arrival time before clock: 2.250ns
    Maximum output required time after clock: 2.575ns
    Maximum combinational path delay: No path found
 
@@ -1239,7 +1240,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_I'
   Clock period: 9.758ns (frequency: 102.477MHz)
-  Total number of paths / destination ports: 6052 / 227
+  Total number of paths / destination ports: 6061 / 236
 -------------------------------------------------------------------------
 Delay:               10.539ns (Levels of Logic = 3)
   Source:            my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/vga_sync_i/v_count_r_8 (FF)
@@ -1322,25 +1323,22 @@ Offset:              1.395ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_30_o'
-  Total number of paths / destination ports: 10 / 1
+  Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              2.463ns (Levels of Logic = 3)
-  Source:            my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I:dout<1> (PAD)
+Offset:              0.567ns (Levels of Logic = 1)
+  Source:            DISPLAY_MODE_I<1> (PAD)
   Destination:       my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s (LATCH)
   Destination Clock: my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/display_mode_i[1]_display_mode_i[1]_OR_30_o falling
 
-  Data Path: my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I:dout<1> to my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s
+  Data Path: DISPLAY_MODE_I<1> to my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    char_rom_def:dout<1>    1   0.000   0.958  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/rom_data<1>)
-     LUT6:I2->O            1   0.254   0.000  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/Mmux_rom_mux_output_o_3 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/Mmux_rom_mux_output_o_3)
-     MUXF7:I1->O           1   0.175   0.790  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/Mmux_rom_mux_output_o_2_f7 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/rom_out_s)
-     LUT4:I2->O            1   0.250   0.000  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/Mmux_active_pixel_s_rom_out_s_MUX_160_o11 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s_rom_out_s_MUX_160_o)
+     LUT4:I0->O            1   0.254   0.000  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/Mmux_active_pixel_s_rom_out_s_MUX_160_o11 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s_rom_out_s_MUX_160_o)
      LD:D                      0.036          my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/active_pixel_s
     ----------------------------------------
-    Total                      2.463ns (0.715ns logic, 1.748ns route)
-                                       (29.0% logic, 71.0% route)
+    Total                      0.567ns (0.567ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
@@ -1363,21 +1361,20 @@ Offset:              2.575ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_I'
-  Total number of paths / destination ports: 38 / 38
+  Total number of paths / destination ports: 29 / 29
 -------------------------------------------------------------------------
-Offset:              2.100ns (Levels of Logic = 0)
-  Source:            my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/text_mem_i/Mram_text_mem3 (RAM)
-  Destination:       my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I:addr<8> (PAD)
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/vga_sync_i/red_r_7 (FF)
+  Destination:       RED_O<7> (PAD)
   Source Clock:      CLK_I rising 0.9X
 
-  Data Path: my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/text_mem_i/Mram_text_mem3 to my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I:addr<8>
+  Data Path: my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/vga_sync_i/red_r_7 to RED_O<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKB->DOB1    0   2.100   0.000  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/text_mem_i/Mram_text_mem3 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_addr_s<5>)
-    char_rom_def:addr<8>        0.000          my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/char_rom_i/BRAM_MEM_I
+     FDRE:C->Q             0   0.525   0.000  my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/vga_sync_i/red_r_7 (my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/vga_i/vga_sync_i/red_r_7)
     ----------------------------------------
-    Total                      2.100ns (2.100ns logic, 0.000ns route)
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
@@ -1407,20 +1404,20 @@ Clock to Setup on destination clock my_peripheral_lab4_0/USER_LOGIC_I/vga_top_i/
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_I          |         |         |    3.361|         |
+CLK_I          |         |         |    4.563|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.32 secs
+Total CPU time to Xst completion: 8.78 secs
  
 --> 
 
-Total memory usage is 291056 kilobytes
+Total memory usage is 293488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   62 (   0 filtered)
-Number of infos    :   44 (   0 filtered)
+Number of infos    :   45 (   0 filtered)
 

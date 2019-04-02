@@ -1,7 +1,7 @@
 
-<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Fri Mar 29 11:33:38 2019">
+<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Tue Apr 02 10:51:39 2019">
 
-  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx45" PACKAGE="fgg676" PART="xc6slx45fgg676-2" SOURCE="D:/ra89-2016/lprs2/lab4/basic_system/system.xmp" SPEEDGRADE="-2"/>
+  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx45" PACKAGE="fgg676" PART="xc6slx45fgg676-2" SOURCE="D:/materija/ra89-2016/lab4/basic_system/system.xmp" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" MHS_INDEX="0" NAME="RS232_Uart_1_sout" SIGNAME="RS232_Uart_1_sout">
@@ -6378,7 +6378,7 @@
             <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_CLK_I_pin"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="20" NAME="RESET_N_I" SIGIS="RST" SIGNAME="net_my_peripheral_lab4_0_RESET_N_I_pin">
+        <PORT DIR="I" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="20" NAME="RESET_N_I" SIGNAME="net_my_peripheral_lab4_0_RESET_N_I_pin">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External Ports" PORT="my_peripheral_lab4_0_RESET_N_I_pin"/>
           </CONNECTIONS>
